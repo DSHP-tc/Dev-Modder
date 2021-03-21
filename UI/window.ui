@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>450</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="windowOpacity">
+   <double>1.000000000000000</double>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>13</y>
+      <width>423</width>
+      <height>575</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(242, 242, 242);
+border: 2px solid #707070;
+border-radius: 40px;</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>10</y>
+       <width>131</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Segoe UI</family>
+       <pointsize>16</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(112, 112, 112);
+border: 0px;</string>
+     </property>
+     <property name="text">
+      <string>Dev Modder</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QListWidget" name="listWidget">
+     <property name="geometry">
+      <rect>
+       <x>14</x>
+       <y>60</y>
+       <width>391</width>
+       <height>224</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+border: 1px solid #707070;
+border-radius: 0px;</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_e">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>300</y>
+       <width>134</width>
+       <height>34</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Segoe UI</family>
+       <pointsize>14</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+background-color: rgb(39, 153, 243);
+	color: rgb(255, 255, 255);
+border: 0px;
+border-radius: 16px;
+
+}
+
+QPushButton:pressed{
+background-color: rgb(33, 132, 208);
+}</string>
+     </property>
+     <property name="text">
+      <string>Enable</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_b">
+     <property name="geometry">
+      <rect>
+       <x>16</x>
+       <y>480</y>
+       <width>134</width>
+       <height>34</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Segoe UI</family>
+       <pointsize>14</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+background-color: rgb(39, 153, 243);
+	color: rgb(255, 255, 255);
+border: 0px;
+border-radius: 16px;
+
+}
+
+QPushButton:pressed{
+background-color: rgb(33, 132, 208);
+}</string>
+     </property>
+     <property name="text">
+      <string>Browse</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_a">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>480</y>
+       <width>134</width>
+       <height>34</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Segoe UI</family>
+       <pointsize>14</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+background-color: rgb(39, 153, 243);
+	color: rgb(255, 255, 255);
+border: 0px;
+border-radius: 16px;
+
+}
+
+QPushButton:pressed{
+background-color: rgb(33, 132, 208);
+}</string>
+     </property>
+     <property name="text">
+      <string>Add widget</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>350</y>
+       <width>201</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Segoe UI</family>
+       <pointsize>14</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(112, 112, 112);
+border: 0px;</string>
+     </property>
+     <property name="text">
+      <string>Add Custom Widget</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit">
+     <property name="geometry">
+      <rect>
+       <x>14</x>
+       <y>390</y>
+       <width>391</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Segoe UI</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+border: 1px solid #707070;
+border-radius: 0px;</string>
+     </property>
+     <property name="text">
+      <string>Enter the name of your widget</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_folder">
+     <property name="geometry">
+      <rect>
+       <x>14</x>
+       <y>430</y>
+       <width>391</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Segoe UI</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel{
+background-color: rgb(255, 255, 255);
+	
+border: 1px solid #707070;
+
+}</string>
+     </property>
+     <property name="text">
+      <string>Your selected folder</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_4">
+     <property name="geometry">
+      <rect>
+       <x>376</x>
+       <y>529</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(0, 120, 212);
+border: 2px solid #707070;
+border-radius: 15px;</string>
+     </property>
+     <property name="text">
+      <string>X</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
