@@ -18,12 +18,14 @@ import os
 CHUNK = 4096 # number of data points to read at a time
 RATE = 44100 # time resolution of the recording device (Hz)
 MAX_VALUE=2**16
-BAR=40
+BAR=100
 class Ui_Form_Vi(object):
     def __init__(self, Form):
         self.Form=Form
         Form.setObjectName("Form")
         Form.resize(620, 175)
+        self.tempdict={}
+        self.mainindex=0
         
         Form.setWindowFlags(QtCore.Qt.FramelessWindowHint  |QtCore.Qt.WindowStaysOnBottomHint| QtCore.Qt.Tool)
         Form.setAttribute(QtCore.Qt.WA_TranslucentBackground)
@@ -35,7 +37,15 @@ class Ui_Form_Vi(object):
         self.Form.move(int(self.style_dict["defaultx"]),int(self.style_dict["defaulty"]))
 
         self.p=pyaudio.PyAudio() # start the PyAudio class
-        self.stream=self.p.open(format=pyaudio.paInt16,channels=1,rate=RATE,input=True,input_device_index = 2,
+
+
+        for i in range(self.p.get_device_count()):
+                self.tempdict=self.p.get_device_info_by_index(i)
+                print(self.tempdict)
+                if "Stereo Mix" in self.tempdict["name"]:
+                        self.mainindex=self.tempdict["index"]
+                        break
+        self.stream=self.p.open(format=pyaudio.paInt16,channels=1,rate=RATE,input=True,input_device_index = self.mainindex,
               frames_per_buffer=CHUNK) #uses default input device
 
 
