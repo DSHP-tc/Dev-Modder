@@ -1,10 +1,10 @@
-from PyQt5 import QtCore, QtGui, QtWidgets
-import datetime  
-from datetime import date 
-from PyQt5.QtCore import QTimer, QTime,Qt
-from PyQt5.QtGui import QMouseEvent, QCursor
-from Clock.clock_window import Ui_Form
-from Visualizer.balls import Ui_Form_Vi
+from PyQt5 import  QtWidgets
+
+
+from PyQt5.QtCore import Qt
+from PyQt5.QtGui import  QCursor
+from mod.clock_window import Ui_Form
+from mod.balls import Ui_Form_Vi
 
 class Main_clock(QtWidgets.QWidget):
     def __init__(self):
